@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Nạp Thẻ - Shop Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-200 font-sans pb-20">
+
+    <header class="flex justify-between items-center p-3 bg-white shadow-sm border-b">
+        <div class="flex items-center gap-2">
+            <div class="bg-gradient-to-r from-red-500 to-purple-500 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center italic">T</div>
+            <span class="font-bold text-xl">TozPie</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <button class="border border-red-500 text-red-500 font-medium px-4 py-1.5 rounded-md text-sm flex items-center gap-2">
+                <i class="fas fa-user"></i> Đăng nhập / Đăng ký
+            </button>
+            <i class="fas fa-moon text-gray-500 text-xl cursor-pointer"></i>
+        </div>
+    </header>
+
+    <div class="bg-[#111115] text-white p-8 text-center border-b-4 border-yellow-400">
+        <h1 class="text-2xl font-bold mb-2">AutoShop là nền tảng <br><span class="text-pink-500">tạo shop game tự động</span></h1>
+        <p class="text-gray-400 text-xs mt-2">Khởi tạo tức thì, đa dạng giao diện, nạp thẻ tự động...</p>
+    </div>
+
+    <div class="m-4 bg-white rounded-lg shadow p-4">
+        
+        <div class="flex gap-2 mb-6">
+            <button class="flex-1 bg-red-600 hover:bg-red-700 text-white py-2.5 rounded text-sm font-bold flex items-center justify-center gap-2">
+                <i class="fas fa-ticket-alt"></i> NẠP THẺ
+            </button>
+            <button class="flex-1 border border-red-500 text-red-500 py-2.5 rounded text-sm font-bold flex items-center justify-center gap-2">
+                <i class="fas fa-university"></i> NGÂN HÀNG
+            </button>
+        </div>
+
+        <h2 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
+            <i class="fas fa-bolt text-red-600"></i> NẠP THẺ CÀO TỰ ĐỘNG
+        </h2>
+
+        <form action="#" method="POST" class="space-y-4">
+            <div class="flex items-center border border-pink-200 rounded bg-pink-50/30">
+                <div class="p-3 text-red-500 bg-pink-100 rounded-l"><i class="fas fa-layer-group"></i></div>
+                <select class="w-full p-3 bg-transparent outline-none text-gray-600 text-sm">
+                    <option>-- Chọn loại thẻ --</option>
+                    <option>Viettel</option>
+                    <option>Vinaphone</option>
+                    <option>Mobifone</option>
+                </select>
+            </div>
+
+            <div class="flex items-center border border-pink-200 rounded bg-pink-50/30">
+                <div class="p-3 text-red-500 bg-pink-100 rounded-l"><i class="fas fa-money-bill-wave"></i></div>
+                <select class="w-full p-3 bg-transparent outline-none text-gray-600 text-sm">
+                    <option>-- Chọn mệnh giá --</option>
+                    <option>10,000đ</option>
+                    <option>20,000đ</option>
+                    <option>50,000đ</option>
+                </select>
+            </div>
+
+            <div class="flex gap-3">
+                <input type="text" placeholder="Số seri" class="w-1/2 border border-pink-200 p-3 rounded outline-none text-sm focus:border-red-400">
+                <input type="text" placeholder="Mã thẻ" class="w-1/2 border border-pink-200 p-3 rounded outline-none text-sm focus:border-red-400">
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <input type="text" placeholder="Mã bảo mật" class="w-full border border-pink-200 p-3 rounded outline-none text-sm focus:border-red-400">
+                <div class="w-32 h-12 bg-gray-800 text-red-500 font-mono font-bold flex items-center justify-center tracking-widest relative overflow-hidden">
+                    QB6JQC
+                    <div class="absolute inset-0 opacity-30" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 2px, #fff 2px, #fff 4px);"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-3.5 rounded flex items-center justify-center gap-2 mt-2">
+                <i class="fas fa-check-circle"></i> NẠP THẺ NGAY
+            </button>
+        </form>
+    </div>
+
+    <nav class="fixed bottom-0 w-full bg-white border-t flex justify-around p-2 text-xs text-gray-500 z-10 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+        <a href="#" class="flex flex-col items-center text-red-600 font-bold p-1">
+            <i class="fas fa-home text-lg mb-1"></i> Trang chủ
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-red-600 p-1">
+            <i class="fas fa-hand-holding-usd text-lg mb-1"></i> Nạp tiền
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-red-600 p-1">
+            <i class="fas fa-history text-lg mb-1"></i> Lịch sử
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-red-600 p-1">
+            <i class="fas fa-user-circle text-lg mb-1"></i> Tài khoản
+        </a>
+    </nav>
+
+</body>
+</html>
